@@ -1,0 +1,19 @@
+{
+  "name": "envify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "cross-env": "1.0.8",
+    "envify": "3.4.1",
+    "react": "15.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "cross-env NODE_ENV=staging browserify -t -g [ envify purge --NODE_ENV production ] index.js > build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
